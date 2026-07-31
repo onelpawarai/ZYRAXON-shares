@@ -3,9 +3,18 @@
   "secretHash": "b931fd567d6c440768802bbdf4e64b5628055d4f0bd498a95353ef7c6a59832b",
   "sessionID": "test_session_123",
   "timeCreated": "2026-07-31T17:00:52.795Z",
-  "timeUpdated": "2026-07-31T17:00:52.795Z",
-  "session": null,
-  "messages": [],
+  "timeUpdated": "2026-07-31T17:00:54.139Z",
+  "session": {
+    "id": "s1",
+    "title": "Test Session"
+  },
+  "messages": [
+    {
+      "id": "m1",
+      "role": "user",
+      "content": "Create a login page"
+    }
+  ],
   "parts": [],
   "diffs": [],
   "models": []
