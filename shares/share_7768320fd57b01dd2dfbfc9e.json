@@ -3,7 +3,7 @@
   "secretHash": "69162d84424f7dc2c6745b5078cd8ccc346fd973b4aaa04ea8f65df52c637ff1",
   "sessionID": "ses_042db7acfffesKTjDZPktR0ult",
   "timeCreated": "2026-08-01T11:45:23.834Z",
-  "timeUpdated": "2026-08-01T11:45:34.833Z",
+  "timeUpdated": "2026-08-01T11:45:37.341Z",
   "session": {
     "id": "ses_042db7acfffesKTjDZPktR0ult",
     "slug": "gentle-planet",
@@ -25,11 +25,11 @@
     },
     "cost": 0,
     "tokens": {
-      "input": 0,
-      "output": 0,
-      "reasoning": 0,
+      "input": 1658,
+      "output": 74,
+      "reasoning": 51,
       "cache": {
-        "read": 0,
+        "read": 16384,
         "write": 0
       }
     },
@@ -38,7 +38,7 @@
     },
     "time": {
       "created": 1785584715056,
-      "updated": 1785584723355
+      "updated": 1785584734602
     }
   },
   "messages": [
@@ -69,21 +69,24 @@
       },
       "cost": 0,
       "tokens": {
-        "input": 0,
-        "output": 0,
-        "reasoning": 0,
+        "total": 18167,
+        "input": 1658,
+        "output": 74,
+        "reasoning": 51,
         "cache": {
-          "read": 0,
-          "write": 0
+          "write": 0,
+          "read": 16384
         }
       },
       "modelID": "mimo-v2.5-free",
       "providerID": "opencode",
       "time": {
-        "created": 1785584716189
+        "created": 1785584716189,
+        "completed": 1785584734591
       },
       "id": "msg_fbd24899d0013kJ8bjHI602hZs",
-      "sessionID": "ses_042db7acfffesKTjDZPktR0ult"
+      "sessionID": "ses_042db7acfffesKTjDZPktR0ult",
+      "finish": "stop"
     }
   ],
   "parts": [
@@ -116,16 +119,89 @@
       "messageID": "msg_fbd24899d0013kJ8bjHI602hZs",
       "sessionID": "ses_042db7acfffesKTjDZPktR0ult",
       "type": "text",
-      "text": "",
+      "text": "Hey there! 👋 Welcome to ZYRAXON! \n\nAmi Commander — tumar project build, design, debug — sob kichu coordinate korte ami achi. Tomar team e 9 ta elite specialist + unlimited general agents ready ache!\n\nKi korte chai? Bolo, ami shuru korchi! 🚀",
       "time": {
-        "start": 1785584732996
+        "start": 1785584732996,
+        "end": 1785584734570
       }
+    },
+    {
+      "id": "prt_fbd24d172001cneM3DwLhWp5WI",
+      "reason": "stop",
+      "messageID": "msg_fbd24899d0013kJ8bjHI602hZs",
+      "sessionID": "ses_042db7acfffesKTjDZPktR0ult",
+      "type": "step-finish",
+      "tokens": {
+        "total": 18167,
+        "input": 1658,
+        "output": 74,
+        "reasoning": 51,
+        "cache": {
+          "write": 0,
+          "read": 16384
+        }
+      },
+      "cost": 0
     }
   ],
   "diffs": [
+    [],
     []
   ],
   "models": [
+    [
+      {
+        "id": "mimo-v2.5-free",
+        "providerID": "opencode",
+        "name": "MiMo V2.5 Free",
+        "family": "mimo-v2.5-free",
+        "api": {
+          "id": "mimo-v2.5-free",
+          "url": "https://opencode.ai/zen/v1",
+          "npm": "@ai-sdk/openai-compatible"
+        },
+        "status": "active",
+        "headers": {},
+        "options": {},
+        "cost": {
+          "input": 0,
+          "output": 0,
+          "cache": {
+            "read": 0,
+            "write": 0
+          }
+        },
+        "limit": {
+          "context": 200000,
+          "output": 32000
+        },
+        "capabilities": {
+          "temperature": true,
+          "reasoning": true,
+          "attachment": true,
+          "toolcall": true,
+          "input": {
+            "text": true,
+            "audio": true,
+            "image": true,
+            "video": true,
+            "pdf": false
+          },
+          "output": {
+            "text": true,
+            "audio": false,
+            "image": false,
+            "video": false,
+            "pdf": false
+          },
+          "interleaved": {
+            "field": "reasoning_content"
+          }
+        },
+        "release_date": "2026-04-24",
+        "variants": {}
+      }
+    ],
     [
       {
         "id": "mimo-v2.5-free",
