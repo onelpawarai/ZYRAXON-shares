@@ -3,10 +3,154 @@
   "secretHash": "69162d84424f7dc2c6745b5078cd8ccc346fd973b4aaa04ea8f65df52c637ff1",
   "sessionID": "ses_042db7acfffesKTjDZPktR0ult",
   "timeCreated": "2026-08-01T11:45:23.834Z",
-  "timeUpdated": "2026-08-01T11:45:23.834Z",
-  "session": null,
-  "messages": [],
-  "parts": [],
-  "diffs": [],
-  "models": []
+  "timeUpdated": "2026-08-01T11:45:26.115Z",
+  "session": {
+    "id": "ses_042db7acfffesKTjDZPktR0ult",
+    "slug": "gentle-planet",
+    "projectID": "global",
+    "directory": "C:\\Users\\MMP\\Documents\\Default Project",
+    "path": "Users/MMP/Documents/Default Project",
+    "title": "New session - 2026-08-01T11:45:15.056Z",
+    "agent": "auto",
+    "model": {
+      "id": "mimo-v2.5-free",
+      "providerID": "opencode",
+      "variant": "default"
+    },
+    "version": "1.18.0",
+    "summary": {
+      "additions": 0,
+      "deletions": 0,
+      "files": 0
+    },
+    "cost": 0,
+    "tokens": {
+      "input": 0,
+      "output": 0,
+      "reasoning": 0,
+      "cache": {
+        "read": 0,
+        "write": 0
+      }
+    },
+    "share": {
+      "url": "https://zyraxonai.lovable.app/share/share_7768320fd57b01dd2dfbfc9e"
+    },
+    "time": {
+      "created": 1785584715056,
+      "updated": 1785584723355
+    }
+  },
+  "messages": [
+    {
+      "role": "user",
+      "time": {
+        "created": 1785584715955
+      },
+      "agent": "auto",
+      "model": {
+        "providerID": "opencode",
+        "modelID": "mimo-v2.5-free"
+      },
+      "summary": {
+        "diffs": []
+      },
+      "id": "msg_fbd2487080011JQtRk26R7fz7q",
+      "sessionID": "ses_042db7acfffesKTjDZPktR0ult"
+    },
+    {
+      "parentID": "msg_fbd2487080011JQtRk26R7fz7q",
+      "role": "assistant",
+      "mode": "auto",
+      "agent": "auto",
+      "path": {
+        "cwd": "C:\\Users\\MMP\\Documents\\Default Project",
+        "root": "/"
+      },
+      "cost": 0,
+      "tokens": {
+        "input": 0,
+        "output": 0,
+        "reasoning": 0,
+        "cache": {
+          "read": 0,
+          "write": 0
+        }
+      },
+      "modelID": "mimo-v2.5-free",
+      "providerID": "opencode",
+      "time": {
+        "created": 1785584716189
+      },
+      "id": "msg_fbd24899d0013kJ8bjHI602hZs",
+      "sessionID": "ses_042db7acfffesKTjDZPktR0ult"
+    }
+  ],
+  "parts": [
+    {
+      "type": "text",
+      "text": "hi",
+      "id": "prt_fbd248709001IpAqKCTAE54Wee",
+      "sessionID": "ses_042db7acfffesKTjDZPktR0ult",
+      "messageID": "msg_fbd2487080011JQtRk26R7fz7q"
+    }
+  ],
+  "diffs": [
+    []
+  ],
+  "models": [
+    [
+      {
+        "id": "mimo-v2.5-free",
+        "providerID": "opencode",
+        "name": "MiMo V2.5 Free",
+        "family": "mimo-v2.5-free",
+        "api": {
+          "id": "mimo-v2.5-free",
+          "url": "https://opencode.ai/zen/v1",
+          "npm": "@ai-sdk/openai-compatible"
+        },
+        "status": "active",
+        "headers": {},
+        "options": {},
+        "cost": {
+          "input": 0,
+          "output": 0,
+          "cache": {
+            "read": 0,
+            "write": 0
+          }
+        },
+        "limit": {
+          "context": 200000,
+          "output": 32000
+        },
+        "capabilities": {
+          "temperature": true,
+          "reasoning": true,
+          "attachment": true,
+          "toolcall": true,
+          "input": {
+            "text": true,
+            "audio": true,
+            "image": true,
+            "video": true,
+            "pdf": false
+          },
+          "output": {
+            "text": true,
+            "audio": false,
+            "image": false,
+            "video": false,
+            "pdf": false
+          },
+          "interleaved": {
+            "field": "reasoning_content"
+          }
+        },
+        "release_date": "2026-04-24",
+        "variants": {}
+      }
+    ]
+  ]
 }
