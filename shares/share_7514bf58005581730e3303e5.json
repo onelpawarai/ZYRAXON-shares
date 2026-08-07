@@ -3,7 +3,7 @@
   "secretHash": "fd17119e899fdc8d5a89933eb3a66e94cf0b72daedba923884c8a4889afc094b",
   "sessionID": "ses_0229e8a4fffe0vIQLzSZJIloGT",
   "timeCreated": "2026-08-07T18:06:52.731Z",
-  "timeUpdated": "2026-08-07T18:11:08.344Z",
+  "timeUpdated": "2026-08-07T18:11:13.977Z",
   "session": {
     "id": "ses_0229e8a4fffe0vIQLzSZJIloGT",
     "slug": "gentle-lagoon",
@@ -25,11 +25,11 @@
     },
     "cost": 0,
     "tokens": {
-      "input": 192550,
-      "output": 2346,
-      "reasoning": 1950,
+      "input": 276753,
+      "output": 3210,
+      "reasoning": 2941,
       "cache": {
-        "read": 339968,
+        "read": 438272,
         "write": 0
       }
     },
@@ -38,7 +38,7 @@
     },
     "time": {
       "created": 1786125579696,
-      "updated": 1786126216421
+      "updated": 1786126271740
     }
   },
   "messages": [
@@ -578,6 +578,63 @@
       "providerID": "opencode",
       "time": {
         "created": 1786126216404
+      },
+      "sessionID": "ses_0229e8a4fffe0vIQLzSZJIloGT"
+    },
+    {
+      "id": "msg_fdd6bc1c4001L6K5asUV94HCKn",
+      "parentID": "msg_fdd668485001R6yZi1AJVh2lrE",
+      "role": "assistant",
+      "mode": "build",
+      "agent": "build",
+      "path": {
+        "cwd": "C:\\Users\\MMP\\Documents\\Default Project",
+        "root": "/"
+      },
+      "cost": 0,
+      "tokens": {
+        "total": 65130,
+        "input": 31803,
+        "output": 366,
+        "reasoning": 193,
+        "cache": {
+          "write": 0,
+          "read": 32768
+        }
+      },
+      "modelID": "mimo-v2.5-free",
+      "providerID": "opencode",
+      "time": {
+        "created": 1786126254532,
+        "completed": 1786126271722
+      },
+      "sessionID": "ses_0229e8a4fffe0vIQLzSZJIloGT",
+      "finish": "tool-calls"
+    },
+    {
+      "id": "msg_fdd6c04f80011ipoNKwmscld0D",
+      "parentID": "msg_fdd668485001R6yZi1AJVh2lrE",
+      "role": "assistant",
+      "mode": "build",
+      "agent": "build",
+      "path": {
+        "cwd": "C:\\Users\\MMP\\Documents\\Default Project",
+        "root": "/"
+      },
+      "cost": 0,
+      "tokens": {
+        "input": 0,
+        "output": 0,
+        "reasoning": 0,
+        "cache": {
+          "read": 0,
+          "write": 0
+        }
+      },
+      "modelID": "mimo-v2.5-free",
+      "providerID": "opencode",
+      "time": {
+        "created": 1786126271736
       },
       "sessionID": "ses_0229e8a4fffe0vIQLzSZJIloGT"
     }
@@ -1838,15 +1895,20 @@
       "tool": "bash",
       "callID": "call_cb4e026f3d4d483fbb34e6f9",
       "state": {
-        "metadata": {
-          "output": ""
-        },
-        "status": "running",
+        "status": "completed",
         "input": {
           "command": "# The ZYRAXON app uses app.getPath(\"userData\") which for Electron is typically:\n# Windows: %APPDATA%\\ZYRAXON or %APPDATA%\\zyraxon\n# Let's check all possible locations\n$paths = @(\n    \"$env:APPDATA\\ZYRAXON\",\n    \"$env:APPDATA\\zyraxon\", \n    \"$env:LOCALAPPDATA\\ZYRAXON\",\n    \"$env:LOCALAPPDATA\\zyraxon\",\n    \"$env:USERPROFILE\\.zyraxon\"\n)\n\nforeach ($p in $paths) {\n    if (Test-Path $p) {\n        Write-Host \"FOUND: $p\"\n        Get-ChildItem $p -ErrorAction SilentlyContinue | Select-Object Name, LastWriteTime\n        if (Test-Path \"$p\\extensions\") {\n            Write-Host \"`nExtensions in $p\\extensions :\"\n            Get-ChildItem \"$p\\extensions\" -ErrorAction SilentlyContinue | Select-Object Name, LastWriteTime\n        }\n    }\n}"
         },
+        "output": "FOUND: C:\\Users\\MMP\\.zyraxon\n\r\nName       LastWriteTime       \r\n----       -------------       \r\nwebsites   8/7/2026 7:23:23 PM \r\n.gitignore 8/7/2026 11:37:42 PM\r\n\r\n\r\n",
+        "metadata": {
+          "output": "FOUND: C:\\Users\\MMP\\.zyraxon\n\r\nName       LastWriteTime       \r\n----       -------------       \r\nwebsites   8/7/2026 7:23:23 PM \r\n.gitignore 8/7/2026 11:37:42 PM\r\n\r\n\r\n",
+          "exit": 0,
+          "truncated": false
+        },
+        "title": "# The ZYRAXON app uses app.getPath(\"userData\") which for Electron is typically:\n# Windows: %APPDATA%\\ZYRAXON or %APPDATA%\\zyraxon\n# Let's check all possible locations\n$paths = @(\n    \"$env:APPDATA\\ZYRAXON\",\n    \"$env:APPDATA\\zyraxon\", \n    \"$env:LOCALAPPDATA\\ZYRAXON\",\n    \"$env:LOCALAPPDATA\\zyraxon\",\n    \"$env:USERPROFILE\\.zyraxon\"\n)\n\nforeach ($p in $paths) {\n    if (Test-Path $p) {\n        Write-Host \"FOUND: $p\"\n        Get-ChildItem $p -ErrorAction SilentlyContinue | Select-Object Name, LastWriteTime\n        if (Test-Path \"$p\\extensions\") {\n            Write-Host \"`nExtensions in $p\\extensions :\"\n            Get-ChildItem \"$p\\extensions\" -ErrorAction SilentlyContinue | Select-Object Name, LastWriteTime\n        }\n    }\n}",
         "time": {
-          "start": 1786126265855
+          "start": 1786126271428,
+          "end": 1786126271528
         }
       },
       "id": "prt_fdd6be4bb001wXeCdz891v0nSh",
@@ -1858,20 +1920,43 @@
       "tool": "bash",
       "callID": "call_f299a3f7b6be460788f2e3b2",
       "state": {
-        "metadata": {
-          "output": ""
-        },
-        "status": "running",
+        "status": "completed",
         "input": {
           "command": "# Check the ZYRAXON app's actual userData path by looking at the source\n$desktopPath = \"C:\\Users\\MMP\\Downloads\\ZYRAXON-AI-main\\ZYRAXON-AI-main\\packages\\desktop\"\nif (Test-Path $desktopPath) {\n    # Look for any config that specifies userData path\n    Get-ChildItem $desktopPath -Filter \"*.json\" -Recurse -ErrorAction SilentlyContinue | Select-Object FullName -First 5\n}"
         },
+        "output": "\r\nFullName                                                                                                               \r\n--------                                                                                                               \r\nC:\\Users\\MMP\\Downloads\\ZYRAXON-AI-main\\ZYRAXON-AI-main\\packages\\desktop\\package.json                                   \r\nC:\\Users\\MMP\\Downloads\\ZYRAXON-AI-main\\ZYRAXON-AI-main\\packages\\desktop\\tsconfig.json                                  \r\nC:\\Users\\MMP\\Downloads\\ZYRAXON-AI-main\\ZYRAXON-AI-main\\packages\\desktop\\dist\\win-unpacked\\vk_swiftshader_icd.json      \r\nC:\\Users\\MMP\\Downloads\\ZYRAXON-AI-main\\ZYRAXON-AI-main\\packages\\desktop\\dist\\win-unpacked\\resources\\app.asar.unpacke...\r\nC:\\Users\\MMP\\Downloads\\ZYRAXON-AI-main\\ZYRAXON-AI-main\\packages\\desktop\\dist\\win-unpacked\\resources\\app.asar.unpacke...\r\n\r\n\r\n",
+        "metadata": {
+          "output": "\r\nFullName                                                                                                               \r\n--------                                                                                                               \r\nC:\\Users\\MMP\\Downloads\\ZYRAXON-AI-main\\ZYRAXON-AI-main\\packages\\desktop\\package.json                                   \r\nC:\\Users\\MMP\\Downloads\\ZYRAXON-AI-main\\ZYRAXON-AI-main\\packages\\desktop\\tsconfig.json                                  \r\nC:\\Users\\MMP\\Downloads\\ZYRAXON-AI-main\\ZYRAXON-AI-main\\packages\\desktop\\dist\\win-unpacked\\vk_swiftshader_icd.json      \r\nC:\\Users\\MMP\\Downloads\\ZYRAXON-AI-main\\ZYRAXON-AI-main\\packages\\desktop\\dist\\win-unpacked\\resources\\app.asar.unpacke...\r\nC:\\Users\\MMP\\Downloads\\ZYRAXON-AI-main\\ZYRAXON-AI-main\\packages\\desktop\\dist\\win-unpacked\\resources\\app.asar.unpacke...\r\n\r\n\r\n",
+          "exit": 0,
+          "truncated": false
+        },
+        "title": "# Check the ZYRAXON app's actual userData path by looking at the source\n$desktopPath = \"C:\\Users\\MMP\\Downloads\\ZYRAXON-AI-main\\ZYRAXON-AI-main\\packages\\desktop\"\nif (Test-Path $desktopPath) {\n    # Look for any config that specifies userData path\n    Get-ChildItem $desktopPath -Filter \"*.json\" -Recurse -ErrorAction SilentlyContinue | Select-Object FullName -First 5\n}",
         "time": {
-          "start": 1786126266866
+          "start": 1786126271610,
+          "end": 1786126271705
         }
       },
       "id": "prt_fdd6bee0e001TiwuxsSnsdSNoe",
       "sessionID": "ses_0229e8a4fffe0vIQLzSZJIloGT",
       "messageID": "msg_fdd6bc1c4001L6K5asUV94HCKn"
+    },
+    {
+      "id": "prt_fdd6c04e6001kNtCgQLule1Hj3",
+      "reason": "tool-calls",
+      "messageID": "msg_fdd6bc1c4001L6K5asUV94HCKn",
+      "sessionID": "ses_0229e8a4fffe0vIQLzSZJIloGT",
+      "type": "step-finish",
+      "tokens": {
+        "total": 65130,
+        "input": 31803,
+        "output": 366,
+        "reasoning": 193,
+        "cache": {
+          "write": 0,
+          "read": 32768
+        }
+      },
+      "cost": 0
     }
   ],
   "diffs": [
@@ -1879,9 +1964,63 @@
     [],
     [],
     [],
+    [],
     []
   ],
   "models": [
+    [
+      {
+        "id": "mimo-v2.5-free",
+        "providerID": "opencode",
+        "name": "MiMo V2.5 Free",
+        "family": "mimo-v2.5-free",
+        "api": {
+          "id": "mimo-v2.5-free",
+          "url": "https://opencode.ai/zen/v1",
+          "npm": "@ai-sdk/openai-compatible"
+        },
+        "status": "active",
+        "headers": {},
+        "options": {},
+        "cost": {
+          "input": 0,
+          "output": 0,
+          "cache": {
+            "read": 0,
+            "write": 0
+          }
+        },
+        "limit": {
+          "context": 200000,
+          "output": 32000
+        },
+        "capabilities": {
+          "temperature": true,
+          "reasoning": true,
+          "attachment": true,
+          "toolcall": true,
+          "input": {
+            "text": true,
+            "audio": true,
+            "image": true,
+            "video": true,
+            "pdf": false
+          },
+          "output": {
+            "text": true,
+            "audio": false,
+            "image": false,
+            "video": false,
+            "pdf": false
+          },
+          "interleaved": {
+            "field": "reasoning_content"
+          }
+        },
+        "release_date": "2026-04-24",
+        "variants": {}
+      }
+    ],
     [
       {
         "id": "mimo-v2.5-free",
