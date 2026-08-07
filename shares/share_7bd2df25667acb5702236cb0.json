@@ -3,10 +3,155 @@
   "secretHash": "294f8de5235ee5fda49a0a94007582678615cda81e0d2b269230d4a123c1839a",
   "sessionID": "ses_0239bbd5dffeYw7qBT5vfMiBl2",
   "timeCreated": "2026-08-07T14:46:44.682Z",
-  "timeUpdated": "2026-08-07T14:46:44.682Z",
-  "session": null,
-  "messages": [],
-  "parts": [],
-  "diffs": [],
-  "models": []
+  "timeUpdated": "2026-08-07T14:50:07.139Z",
+  "session": {
+    "id": "ses_0239bbd5dffeYw7qBT5vfMiBl2",
+    "slug": "playful-harbor",
+    "projectID": "global",
+    "directory": "C:\\Users\\MMP\\Documents\\Default Project",
+    "path": "Users/MMP/Documents/Default Project",
+    "title": "ফ্যামিলি শপের গ্লাস মর্ফিজম ওয়েবসাইট তৈরি",
+    "agent": "auto",
+    "model": {
+      "id": "mimo-v2.5-free",
+      "providerID": "opencode",
+      "variant": "default"
+    },
+    "version": "0.0.0-fix/bun-protocol-crash-202608070926",
+    "summary": {
+      "additions": 0,
+      "deletions": 0,
+      "files": 0
+    },
+    "cost": 0,
+    "tokens": {
+      "input": 966954,
+      "output": 50519,
+      "reasoning": 8215,
+      "cache": {
+        "read": 3094912,
+        "write": 0
+      }
+    },
+    "share": {
+      "url": "https://zyraxonai.lovable.app/share/share_7bd2df25667acb5702236cb0"
+    },
+    "time": {
+      "created": 1786108986018,
+      "updated": 1786114204097,
+      "archived": 1786113987314
+    }
+  },
+  "messages": [
+    {
+      "role": "user",
+      "time": {
+        "created": 1786114204045
+      },
+      "agent": "auto",
+      "model": {
+        "providerID": "opencode",
+        "modelID": "mimo-v2.5-free"
+      },
+      "id": "msg_fdcb3e0f0001Fm5t76lWQ0AR2P",
+      "sessionID": "ses_0239bbd5dffeYw7qBT5vfMiBl2",
+      "summary": {
+        "diffs": []
+      }
+    },
+    {
+      "id": "msg_fdcb3e1a2001ECBTEIN6AmLvul",
+      "parentID": "msg_fdcb3e0f0001Fm5t76lWQ0AR2P",
+      "role": "assistant",
+      "mode": "auto",
+      "agent": "auto",
+      "path": {
+        "cwd": "C:\\Users\\MMP\\Documents\\Default Project",
+        "root": "/"
+      },
+      "cost": 0,
+      "tokens": {
+        "input": 0,
+        "output": 0,
+        "reasoning": 0,
+        "cache": {
+          "read": 0,
+          "write": 0
+        }
+      },
+      "modelID": "mimo-v2.5-free",
+      "providerID": "opencode",
+      "time": {
+        "created": 1786114204066
+      },
+      "sessionID": "ses_0239bbd5dffeYw7qBT5vfMiBl2"
+    }
+  ],
+  "parts": [
+    {
+      "id": "prt_fdcb3e0f7001J9Q60E72OBTiMQ",
+      "type": "text",
+      "text": "বাংলাই কথা বল এতো বুল বারেবারে একি কাজ করতাছ অথছ",
+      "messageID": "msg_fdcb3e0f0001Fm5t76lWQ0AR2P",
+      "sessionID": "ses_0239bbd5dffeYw7qBT5vfMiBl2"
+    }
+  ],
+  "diffs": [
+    []
+  ],
+  "models": [
+    [
+      {
+        "id": "mimo-v2.5-free",
+        "providerID": "opencode",
+        "name": "MiMo V2.5 Free",
+        "family": "mimo-v2.5-free",
+        "api": {
+          "id": "mimo-v2.5-free",
+          "url": "https://opencode.ai/zen/v1",
+          "npm": "@ai-sdk/openai-compatible"
+        },
+        "status": "active",
+        "headers": {},
+        "options": {},
+        "cost": {
+          "input": 0,
+          "output": 0,
+          "cache": {
+            "read": 0,
+            "write": 0
+          }
+        },
+        "limit": {
+          "context": 200000,
+          "output": 32000
+        },
+        "capabilities": {
+          "temperature": true,
+          "reasoning": true,
+          "attachment": true,
+          "toolcall": true,
+          "input": {
+            "text": true,
+            "audio": true,
+            "image": true,
+            "video": true,
+            "pdf": false
+          },
+          "output": {
+            "text": true,
+            "audio": false,
+            "image": false,
+            "video": false,
+            "pdf": false
+          },
+          "interleaved": {
+            "field": "reasoning_content"
+          }
+        },
+        "release_date": "2026-04-24",
+        "variants": {}
+      }
+    ]
+  ]
 }
