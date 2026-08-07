@@ -3,7 +3,7 @@
   "secretHash": "fd17119e899fdc8d5a89933eb3a66e94cf0b72daedba923884c8a4889afc094b",
   "sessionID": "ses_0229e8a4fffe0vIQLzSZJIloGT",
   "timeCreated": "2026-08-07T18:06:52.731Z",
-  "timeUpdated": "2026-08-07T18:08:01.689Z",
+  "timeUpdated": "2026-08-07T18:08:05.991Z",
   "session": {
     "id": "ses_0229e8a4fffe0vIQLzSZJIloGT",
     "slug": "gentle-lagoon",
@@ -25,11 +25,11 @@
     },
     "cost": 0,
     "tokens": {
-      "input": 136295,
-      "output": 1803,
-      "reasoning": 1435,
+      "input": 154628,
+      "output": 1892,
+      "reasoning": 1628,
       "cache": {
-        "read": 241664,
+        "read": 274432,
         "write": 0
       }
     },
@@ -38,7 +38,7 @@
     },
     "time": {
       "created": 1786125579696,
-      "updated": 1786126073058
+      "updated": 1786126085012
     }
   },
   "messages": [
@@ -479,6 +479,36 @@
       },
       "cost": 0,
       "tokens": {
+        "total": 51383,
+        "input": 18333,
+        "output": 89,
+        "reasoning": 193,
+        "cache": {
+          "write": 0,
+          "read": 32768
+        }
+      },
+      "modelID": "mimo-v2.5-free",
+      "providerID": "opencode",
+      "time": {
+        "created": 1786126073043,
+        "completed": 1786126084980
+      },
+      "sessionID": "ses_0229e8a4fffe0vIQLzSZJIloGT",
+      "finish": "tool-calls"
+    },
+    {
+      "id": "msg_fdd692b84001k0cNopVU1INmX3",
+      "parentID": "msg_fdd668485001R6yZi1AJVh2lrE",
+      "role": "assistant",
+      "mode": "build",
+      "agent": "build",
+      "path": {
+        "cwd": "C:\\Users\\MMP\\Documents\\Default Project",
+        "root": "/"
+      },
+      "cost": 0,
+      "tokens": {
         "input": 0,
         "output": 0,
         "reasoning": 0,
@@ -490,7 +520,7 @@
       "modelID": "mimo-v2.5-free",
       "providerID": "opencode",
       "time": {
-        "created": 1786126073043
+        "created": 1786126084996
       },
       "sessionID": "ses_0229e8a4fffe0vIQLzSZJIloGT"
     }
@@ -1484,14 +1514,136 @@
       "time": {
         "start": 1786126078899
       }
+    },
+    {
+      "type": "tool",
+      "tool": "bash",
+      "callID": "call_775c931a552643719758a72d",
+      "state": {
+        "status": "completed",
+        "input": {
+          "command": "Get-ChildItem \"$env:USERPROFILE\" -Filter \"*.zyraxon*\" -ErrorAction SilentlyContinue"
+        },
+        "output": "\r\n\r\n    Directory: C:\\Users\\MMP\r\n\r\n\r\nMode                 LastWriteTime         Length Name                                                                 \r\n----                 -------------         ------ ----                                                                 \r\nd-----          8/7/2026  11:37 PM                .zyraxon                                                             \r\n\r\n\r\n",
+        "metadata": {
+          "output": "\r\n\r\n    Directory: C:\\Users\\MMP\r\n\r\n\r\nMode                 LastWriteTime         Length Name                                                                 \r\n----                 -------------         ------ ----                                                                 \r\nd-----          8/7/2026  11:37 PM                .zyraxon                                                             \r\n\r\n\r\n",
+          "exit": 0,
+          "truncated": false
+        },
+        "title": "Get-ChildItem \"$env:USERPROFILE\" -Filter \"*.zyraxon*\" -ErrorAction SilentlyContinue",
+        "time": {
+          "start": 1786126084866,
+          "end": 1786126084959
+        }
+      },
+      "id": "prt_fdd691c92001JFUHYlgaOzeA9l",
+      "sessionID": "ses_0229e8a4fffe0vIQLzSZJIloGT",
+      "messageID": "msg_fdd68fcd3001IjEmkD3AiLdLvu"
+    },
+    {
+      "type": "tool",
+      "tool": "bash",
+      "callID": "call_bd398a337d4741d69ef59734",
+      "state": {
+        "status": "completed",
+        "input": {
+          "command": "Get-ChildItem \"$env:USERPROFILE\\.zyraxon\" -Filter \"*.json\" -ErrorAction SilentlyContinue"
+        },
+        "output": "(no output)",
+        "metadata": {
+          "output": "(no output)",
+          "exit": 0,
+          "truncated": false
+        },
+        "title": "Get-ChildItem \"$env:USERPROFILE\\.zyraxon\" -Filter \"*.json\" -ErrorAction SilentlyContinue",
+        "time": {
+          "start": 1786126081997,
+          "end": 1786126084650
+        }
+      },
+      "id": "prt_fdd691e80001bEESs6rVU1RcyQ",
+      "sessionID": "ses_0229e8a4fffe0vIQLzSZJIloGT",
+      "messageID": "msg_fdd68fcd3001IjEmkD3AiLdLvu"
+    },
+    {
+      "id": "prt_fdd692b650010ddbVW2k75B3MC",
+      "reason": "tool-calls",
+      "messageID": "msg_fdd68fcd3001IjEmkD3AiLdLvu",
+      "sessionID": "ses_0229e8a4fffe0vIQLzSZJIloGT",
+      "type": "step-finish",
+      "tokens": {
+        "total": 51383,
+        "input": 18333,
+        "output": 89,
+        "reasoning": 193,
+        "cache": {
+          "write": 0,
+          "read": 32768
+        }
+      },
+      "cost": 0
     }
   ],
   "diffs": [
     [],
     [],
+    [],
     []
   ],
   "models": [
+    [
+      {
+        "id": "mimo-v2.5-free",
+        "providerID": "opencode",
+        "name": "MiMo V2.5 Free",
+        "family": "mimo-v2.5-free",
+        "api": {
+          "id": "mimo-v2.5-free",
+          "url": "https://opencode.ai/zen/v1",
+          "npm": "@ai-sdk/openai-compatible"
+        },
+        "status": "active",
+        "headers": {},
+        "options": {},
+        "cost": {
+          "input": 0,
+          "output": 0,
+          "cache": {
+            "read": 0,
+            "write": 0
+          }
+        },
+        "limit": {
+          "context": 200000,
+          "output": 32000
+        },
+        "capabilities": {
+          "temperature": true,
+          "reasoning": true,
+          "attachment": true,
+          "toolcall": true,
+          "input": {
+            "text": true,
+            "audio": true,
+            "image": true,
+            "video": true,
+            "pdf": false
+          },
+          "output": {
+            "text": true,
+            "audio": false,
+            "image": false,
+            "video": false,
+            "pdf": false
+          },
+          "interleaved": {
+            "field": "reasoning_content"
+          }
+        },
+        "release_date": "2026-04-24",
+        "variants": {}
+      }
+    ],
     [
       {
         "id": "mimo-v2.5-free",
