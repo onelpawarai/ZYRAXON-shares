@@ -3,7 +3,7 @@
   "secretHash": "294f8de5235ee5fda49a0a94007582678615cda81e0d2b269230d4a123c1839a",
   "sessionID": "ses_0239bbd5dffeYw7qBT5vfMiBl2",
   "timeCreated": "2026-08-07T14:46:44.682Z",
-  "timeUpdated": "2026-08-07T14:50:18.133Z",
+  "timeUpdated": "2026-08-07T14:50:52.973Z",
   "session": {
     "id": "ses_0239bbd5dffeYw7qBT5vfMiBl2",
     "slug": "playful-harbor",
@@ -38,7 +38,7 @@
     },
     "time": {
       "created": 1786108986018,
-      "updated": 1786114216545,
+      "updated": 1786114250969,
       "archived": 1786113987314
     },
     "revert": {
@@ -95,6 +95,49 @@
           "message": "Aborted"
         }
       }
+    },
+    {
+      "role": "user",
+      "time": {
+        "created": 1786114250619
+      },
+      "agent": "auto",
+      "model": {
+        "providerID": "opencode",
+        "modelID": "mimo-v2.5-free"
+      },
+      "id": "msg_fdcb496b7001yBTWiB25k29mdM",
+      "sessionID": "ses_0239bbd5dffeYw7qBT5vfMiBl2",
+      "summary": {
+        "diffs": []
+      }
+    },
+    {
+      "id": "msg_fdcb49824001x0TkBiefNo0aJG",
+      "parentID": "msg_fdcb496b7001yBTWiB25k29mdM",
+      "role": "assistant",
+      "mode": "auto",
+      "agent": "auto",
+      "path": {
+        "cwd": "C:\\Users\\MMP\\Documents\\Default Project",
+        "root": "/"
+      },
+      "cost": 0,
+      "tokens": {
+        "input": 0,
+        "output": 0,
+        "reasoning": 0,
+        "cache": {
+          "read": 0,
+          "write": 0
+        }
+      },
+      "modelID": "mimo-v2.5-free",
+      "providerID": "opencode",
+      "time": {
+        "created": 1786114250788
+      },
+      "sessionID": "ses_0239bbd5dffeYw7qBT5vfMiBl2"
     }
   ],
   "parts": [
@@ -104,13 +147,74 @@
       "text": "বাংলাই কথা বল এতো বুল বারেবারে একি কাজ করতাছ অথছ",
       "messageID": "msg_fdcb3e0f0001Fm5t76lWQ0AR2P",
       "sessionID": "ses_0239bbd5dffeYw7qBT5vfMiBl2"
+    },
+    {
+      "id": "prt_fdcb496bf001syimF0Omof4iFg",
+      "type": "text",
+      "text": "বাংলাই কথা বল এতো বুল বারেবারে একি কাজ করতাছ অথচ কিছুই করতে পারতা ছ না",
+      "messageID": "msg_fdcb496b7001yBTWiB25k29mdM",
+      "sessionID": "ses_0239bbd5dffeYw7qBT5vfMiBl2"
     }
   ],
   "diffs": [
     [],
+    [],
     []
   ],
   "models": [
+    [
+      {
+        "id": "mimo-v2.5-free",
+        "providerID": "opencode",
+        "name": "MiMo V2.5 Free",
+        "family": "mimo-v2.5-free",
+        "api": {
+          "id": "mimo-v2.5-free",
+          "url": "https://opencode.ai/zen/v1",
+          "npm": "@ai-sdk/openai-compatible"
+        },
+        "status": "active",
+        "headers": {},
+        "options": {},
+        "cost": {
+          "input": 0,
+          "output": 0,
+          "cache": {
+            "read": 0,
+            "write": 0
+          }
+        },
+        "limit": {
+          "context": 200000,
+          "output": 32000
+        },
+        "capabilities": {
+          "temperature": true,
+          "reasoning": true,
+          "attachment": true,
+          "toolcall": true,
+          "input": {
+            "text": true,
+            "audio": true,
+            "image": true,
+            "video": true,
+            "pdf": false
+          },
+          "output": {
+            "text": true,
+            "audio": false,
+            "image": false,
+            "video": false,
+            "pdf": false
+          },
+          "interleaved": {
+            "field": "reasoning_content"
+          }
+        },
+        "release_date": "2026-04-24",
+        "variants": {}
+      }
+    ],
     [
       {
         "id": "mimo-v2.5-free",
