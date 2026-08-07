@@ -3,7 +3,7 @@
   "secretHash": "294f8de5235ee5fda49a0a94007582678615cda81e0d2b269230d4a123c1839a",
   "sessionID": "ses_0239bbd5dffeYw7qBT5vfMiBl2",
   "timeCreated": "2026-08-07T14:46:44.682Z",
-  "timeUpdated": "2026-08-07T14:57:05.083Z",
+  "timeUpdated": "2026-08-07T14:57:10.011Z",
   "session": {
     "id": "ses_0239bbd5dffeYw7qBT5vfMiBl2",
     "slug": "playful-harbor",
@@ -25,11 +25,11 @@
     },
     "cost": 0,
     "tokens": {
-      "input": 1067801,
-      "output": 74309,
-      "reasoning": 8802,
+      "input": 1110751,
+      "output": 74402,
+      "reasoning": 9165,
       "cache": {
-        "read": 3390784,
+        "read": 3489408,
         "write": 0
       }
     },
@@ -38,7 +38,7 @@
     },
     "time": {
       "created": 1786108986018,
-      "updated": 1786114601756,
+      "updated": 1786114628639,
       "archived": 1786113987314
     },
     "revert": {
@@ -181,6 +181,36 @@
       },
       "cost": 0,
       "tokens": {
+        "total": 142030,
+        "input": 42950,
+        "output": 93,
+        "reasoning": 363,
+        "cache": {
+          "write": 0,
+          "read": 98624
+        }
+      },
+      "modelID": "mimo-v2.5-free",
+      "providerID": "opencode",
+      "time": {
+        "created": 1786114601725,
+        "completed": 1786114628568
+      },
+      "sessionID": "ses_0239bbd5dffeYw7qBT5vfMiBl2",
+      "finish": "tool-calls"
+    },
+    {
+      "id": "msg_fdcba5bed001h7QxHObm4hLQNx",
+      "parentID": "msg_fdcb496b7001yBTWiB25k29mdM",
+      "role": "assistant",
+      "mode": "auto",
+      "agent": "auto",
+      "path": {
+        "cwd": "C:\\Users\\MMP\\Documents\\Default Project",
+        "root": "/"
+      },
+      "cost": 0,
+      "tokens": {
         "input": 0,
         "output": 0,
         "reasoning": 0,
@@ -192,7 +222,7 @@
       "modelID": "mimo-v2.5-free",
       "providerID": "opencode",
       "time": {
-        "created": 1786114601725
+        "created": 1786114628589
       },
       "sessionID": "ses_0239bbd5dffeYw7qBT5vfMiBl2"
     }
@@ -402,9 +432,10 @@
       "messageID": "msg_fdcb9f2fd001woMNw2qoN0f0qs",
       "sessionID": "ses_0239bbd5dffeYw7qBT5vfMiBl2",
       "type": "text",
-      "text": "",
+      "text": "Master, ami dekhchi! Vite server restart korte hobe -- new index.html serve korte. Ekhon korchhi:",
       "time": {
-        "start": 1786114623485
+        "start": 1786114623485,
+        "end": 1786114627793
       }
     },
     {
@@ -415,19 +446,104 @@
       "tool": "bash",
       "callID": "call_b8211fb6dcac4da2910b33fd",
       "state": {
-        "status": "pending",
-        "input": {},
-        "raw": ""
+        "status": "completed",
+        "input": {
+          "command": "Get-Process -Name \"node\" -ErrorAction SilentlyContinue | Stop-Process -Force ; Start-Sleep -Seconds 2",
+          "timeout": 10000
+        },
+        "output": "(no output)",
+        "metadata": {
+          "output": "(no output)",
+          "exit": 0,
+          "truncated": false
+        },
+        "title": "Get-Process -Name \"node\" -ErrorAction SilentlyContinue | Stop-Process -Force ; Start-Sleep -Seconds 2",
+        "time": {
+          "start": 1786114624695,
+          "end": 1786114628531
+        }
       }
+    },
+    {
+      "id": "prt_fdcba5bb9001mUamrMWcwcHXg4",
+      "reason": "tool-calls",
+      "messageID": "msg_fdcb9f2fd001woMNw2qoN0f0qs",
+      "sessionID": "ses_0239bbd5dffeYw7qBT5vfMiBl2",
+      "type": "step-finish",
+      "tokens": {
+        "total": 142030,
+        "input": 42950,
+        "output": 93,
+        "reasoning": 363,
+        "cache": {
+          "write": 0,
+          "read": 98624
+        }
+      },
+      "cost": 0
     }
   ],
   "diffs": [
     [],
     [],
     [],
+    [],
     []
   ],
   "models": [
+    [
+      {
+        "id": "mimo-v2.5-free",
+        "providerID": "opencode",
+        "name": "MiMo V2.5 Free",
+        "family": "mimo-v2.5-free",
+        "api": {
+          "id": "mimo-v2.5-free",
+          "url": "https://opencode.ai/zen/v1",
+          "npm": "@ai-sdk/openai-compatible"
+        },
+        "status": "active",
+        "headers": {},
+        "options": {},
+        "cost": {
+          "input": 0,
+          "output": 0,
+          "cache": {
+            "read": 0,
+            "write": 0
+          }
+        },
+        "limit": {
+          "context": 200000,
+          "output": 32000
+        },
+        "capabilities": {
+          "temperature": true,
+          "reasoning": true,
+          "attachment": true,
+          "toolcall": true,
+          "input": {
+            "text": true,
+            "audio": true,
+            "image": true,
+            "video": true,
+            "pdf": false
+          },
+          "output": {
+            "text": true,
+            "audio": false,
+            "image": false,
+            "video": false,
+            "pdf": false
+          },
+          "interleaved": {
+            "field": "reasoning_content"
+          }
+        },
+        "release_date": "2026-04-24",
+        "variants": {}
+      }
+    ],
     [
       {
         "id": "mimo-v2.5-free",
