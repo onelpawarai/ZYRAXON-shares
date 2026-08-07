@@ -3,7 +3,7 @@
   "secretHash": "fd17119e899fdc8d5a89933eb3a66e94cf0b72daedba923884c8a4889afc094b",
   "sessionID": "ses_0229e8a4fffe0vIQLzSZJIloGT",
   "timeCreated": "2026-08-07T18:06:52.731Z",
-  "timeUpdated": "2026-08-07T18:11:46.445Z",
+  "timeUpdated": "2026-08-07T18:11:49.807Z",
   "session": {
     "id": "ses_0229e8a4fffe0vIQLzSZJIloGT",
     "slug": "gentle-lagoon",
@@ -25,11 +25,11 @@
     },
     "cost": 0,
     "tokens": {
-      "input": 276753,
-      "output": 3210,
-      "reasoning": 2941,
+      "input": 342748,
+      "output": 3886,
+      "reasoning": 3327,
       "cache": {
-        "read": 438272,
+        "read": 503808,
         "write": 0
       }
     },
@@ -38,7 +38,7 @@
     },
     "time": {
       "created": 1786125579696,
-      "updated": 1786126271740
+      "updated": 1786126308499
     }
   },
   "messages": [
@@ -635,6 +635,63 @@
       "providerID": "opencode",
       "time": {
         "created": 1786126271736
+      },
+      "sessionID": "ses_0229e8a4fffe0vIQLzSZJIloGT"
+    },
+    {
+      "id": "msg_fdd6c49fa001PadBCqdI8r1evl",
+      "parentID": "msg_fdd668485001R6yZi1AJVh2lrE",
+      "role": "assistant",
+      "mode": "build",
+      "agent": "build",
+      "path": {
+        "cwd": "C:\\Users\\MMP\\Documents\\Default Project",
+        "root": "/"
+      },
+      "cost": 0,
+      "tokens": {
+        "total": 66587,
+        "input": 33348,
+        "output": 278,
+        "reasoning": 193,
+        "cache": {
+          "write": 0,
+          "read": 32768
+        }
+      },
+      "modelID": "mimo-v2.5-free",
+      "providerID": "opencode",
+      "time": {
+        "created": 1786126289402,
+        "completed": 1786126308484
+      },
+      "sessionID": "ses_0229e8a4fffe0vIQLzSZJIloGT",
+      "finish": "tool-calls"
+    },
+    {
+      "id": "msg_fdd6c948a001Oprww3IAVYmsbR",
+      "parentID": "msg_fdd668485001R6yZi1AJVh2lrE",
+      "role": "assistant",
+      "mode": "build",
+      "agent": "build",
+      "path": {
+        "cwd": "C:\\Users\\MMP\\Documents\\Default Project",
+        "root": "/"
+      },
+      "cost": 0,
+      "tokens": {
+        "input": 0,
+        "output": 0,
+        "reasoning": 0,
+        "cache": {
+          "read": 0,
+          "write": 0
+        }
+      },
+      "modelID": "mimo-v2.5-free",
+      "providerID": "opencode",
+      "time": {
+        "created": 1786126308490
       },
       "sessionID": "ses_0229e8a4fffe0vIQLzSZJIloGT"
     }
@@ -2039,10 +2096,40 @@
       "tool": "bash",
       "callID": "call_afab8e841e7a4e588ba9695e",
       "state": {
-        "status": "pending",
-        "input": {},
-        "raw": ""
+        "status": "completed",
+        "input": {
+          "command": "# The ZYRAXON app is built from source at C:\\Users\\MMP\\Downloads\\ZYRAXON-AI-main\\ZYRAXON-AI-main\n# When running in dev mode (which it appears to be based on \"ZYRAXON Dev\" process name),\n# userData is set by the app's package.json name field\n# Let's check the package.json name\n$pkgPath = \"C:\\Users\\MMP\\Downloads\\ZYRAXON-AI-main\\ZYRAXON-AI-main\\packages\\desktop\\package.json\"\nif (Test-Path $pkgPath) {\n    $pkg = Get-Content $pkgPath | ConvertFrom-Json\n    Write-Host \"App name: $($pkg.name)\"\n    Write-Host \"productName: $($pkg.build.productName)\"\n}\n\n# Also check the main electron entry to see how userData is set\n$mainPath = \"C:\\Users\\MMP\\Downloads\\ZYRAXON-AI-main\\ZYRAXON-AI-main\\packages\\desktop\\src\\main\"\nif (Test-Path $mainPath) {\n    Get-ChildItem $mainPath -Filter \"*.ts\" -ErrorAction SilentlyContinue | Select-Object Name\n}"
+        },
+        "output": "App name: @zyraxon-ai/desktop\nproductName: \n\r\nName                         \r\n----                         \r\napps.ts                      \r\nattachment-picker.test.ts    \r\nattachment-picker.ts         \r\nconstants.ts                 \r\ndebug.ts                     \r\ndesktop-menu-actions.ts      \r\nenv.d.ts                     \r\nextension-host-ipc.ts        \r\nextension-manager.ts         \r\nindex.test.ts                \r\nindex.ts                     \r\ninitialization.ts            \r\ninstall-state.test.ts        \r\ninstall-state.ts             \r\nipc.ts                       \r\nlogging.ts                   \r\nmarkdown.ts                  \r\nmenu.ts                      \r\nmigrate.ts                   \r\nonboarding.ts                \r\nserver.ts                    \r\nshell-env.test.ts            \r\nshell-env.ts                 \r\nsidecar.ts                   \r\nstore-cleanup.test.ts        \r\nstore-cleanup.ts             \r\nstore-keys.ts                \r\nstore.ts                     \r\nunresponsive.ts              \r\nupdater-controller.test.ts   \r\nupdater-controller.ts        \r\nupdater-subscriptions.test.ts\r\nupdater-subscriptions.ts     \r\nupdater.ts                   \r\nwindow-registry.test.ts      \r\nwindow-registry.ts           \r\nwindow-state.ts              \r\nwindows.ts                   \r\nyoutube-stream.ts            \r\n\r\n\r\n",
+        "metadata": {
+          "output": "App name: @zyraxon-ai/desktop\nproductName: \n\r\nName                         \r\n----                         \r\napps.ts                      \r\nattachment-picker.test.ts    \r\nattachment-picker.ts         \r\nconstants.ts                 \r\ndebug.ts                     \r\ndesktop-menu-actions.ts      \r\nenv.d.ts                     \r\nextension-host-ipc.ts        \r\nextension-manager.ts         \r\nindex.test.ts                \r\nindex.ts                     \r\ninitialization.ts            \r\ninstall-state.test.ts        \r\ninstall-state.ts             \r\nipc.ts                       \r\nlogging.ts                   \r\nmarkdown.ts                  \r\nmenu.ts                      \r\nmigrate.ts                   \r\nonboarding.ts                \r\nserver.ts                    \r\nshell-env.test.ts            \r\nshell-env.ts                 \r\nsidecar.ts                   \r\nstore-cleanup.test.ts        \r\nstore-cleanup.ts             \r\nstore-keys.ts                \r\nstore.ts                     \r\nunresponsive.ts              \r\nupdater-controller.test.ts   \r\nupdater-controller.ts        \r\nupdater-subscriptions.test.ts\r\nupdater-subscriptions.ts     \r\nupdater.ts                   \r\nwindow-registry.test.ts      \r\nwindow-registry.ts           \r\nwindow-state.ts              \r\nwindows.ts                   \r\nyoutube-stream.ts            \r\n\r\n\r\n",
+          "exit": 0,
+          "truncated": false
+        },
+        "title": "# The ZYRAXON app is built from source at C:\\Users\\MMP\\Downloads\\ZYRAXON-AI-main\\ZYRAXON-AI-main\n# When running in dev mode (which it appears to be based on \"ZYRAXON Dev\" process name),\n# userData is set by the app's package.json name field\n# Let's check the package.json name\n$pkgPath = \"C:\\Users\\MMP\\Downloads\\ZYRAXON-AI-main\\ZYRAXON-AI-main\\packages\\desktop\\package.json\"\nif (Test-Path $pkgPath) {\n    $pkg = Get-Content $pkgPath | ConvertFrom-Json\n    Write-Host \"App name: $($pkg.name)\"\n    Write-Host \"productName: $($pkg.build.productName)\"\n}\n\n# Also check the main electron entry to see how userData is set\n$mainPath = \"C:\\Users\\MMP\\Downloads\\ZYRAXON-AI-main\\ZYRAXON-AI-main\\packages\\desktop\\src\\main\"\nif (Test-Path $mainPath) {\n    Get-ChildItem $mainPath -Filter \"*.ts\" -ErrorAction SilentlyContinue | Select-Object Name\n}",
+        "time": {
+          "start": 1786126308451,
+          "end": 1786126308473
+        }
       }
+    },
+    {
+      "id": "prt_fdd6c9481001cVXiWZQeTMdDdl",
+      "reason": "tool-calls",
+      "messageID": "msg_fdd6c49fa001PadBCqdI8r1evl",
+      "sessionID": "ses_0229e8a4fffe0vIQLzSZJIloGT",
+      "type": "step-finish",
+      "tokens": {
+        "total": 66587,
+        "input": 33348,
+        "output": 278,
+        "reasoning": 193,
+        "cache": {
+          "write": 0,
+          "read": 32768
+        }
+      },
+      "cost": 0
     }
   ],
   "diffs": [
@@ -2051,9 +2138,63 @@
     [],
     [],
     [],
+    [],
     []
   ],
   "models": [
+    [
+      {
+        "id": "mimo-v2.5-free",
+        "providerID": "opencode",
+        "name": "MiMo V2.5 Free",
+        "family": "mimo-v2.5-free",
+        "api": {
+          "id": "mimo-v2.5-free",
+          "url": "https://opencode.ai/zen/v1",
+          "npm": "@ai-sdk/openai-compatible"
+        },
+        "status": "active",
+        "headers": {},
+        "options": {},
+        "cost": {
+          "input": 0,
+          "output": 0,
+          "cache": {
+            "read": 0,
+            "write": 0
+          }
+        },
+        "limit": {
+          "context": 200000,
+          "output": 32000
+        },
+        "capabilities": {
+          "temperature": true,
+          "reasoning": true,
+          "attachment": true,
+          "toolcall": true,
+          "input": {
+            "text": true,
+            "audio": true,
+            "image": true,
+            "video": true,
+            "pdf": false
+          },
+          "output": {
+            "text": true,
+            "audio": false,
+            "image": false,
+            "video": false,
+            "pdf": false
+          },
+          "interleaved": {
+            "field": "reasoning_content"
+          }
+        },
+        "release_date": "2026-04-24",
+        "variants": {}
+      }
+    ],
     [
       {
         "id": "mimo-v2.5-free",
