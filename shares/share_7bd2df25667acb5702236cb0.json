@@ -3,7 +3,7 @@
   "secretHash": "294f8de5235ee5fda49a0a94007582678615cda81e0d2b269230d4a123c1839a",
   "sessionID": "ses_0239bbd5dffeYw7qBT5vfMiBl2",
   "timeCreated": "2026-08-07T14:46:44.682Z",
-  "timeUpdated": "2026-08-07T14:55:31.621Z",
+  "timeUpdated": "2026-08-07T14:55:35.560Z",
   "session": {
     "id": "ses_0239bbd5dffeYw7qBT5vfMiBl2",
     "slug": "playful-harbor",
@@ -235,6 +235,23 @@
       "time": {
         "start": 1786114530951
       }
+    },
+    {
+      "type": "tool",
+      "tool": "screen_vision",
+      "callID": "call_dc97afae77ae46a39e9f1bc6",
+      "state": {
+        "status": "running",
+        "input": {
+          "action": "capture"
+        },
+        "time": {
+          "start": 1786114531850
+        }
+      },
+      "id": "prt_fdcb8e136001voiueLdCZSX8EU",
+      "sessionID": "ses_0239bbd5dffeYw7qBT5vfMiBl2",
+      "messageID": "msg_fdcb8bc080014FoI0lDiW6eyIg"
     }
   ],
   "diffs": [
