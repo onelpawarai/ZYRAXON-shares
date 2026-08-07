@@ -3,7 +3,7 @@
   "secretHash": "294f8de5235ee5fda49a0a94007582678615cda81e0d2b269230d4a123c1839a",
   "sessionID": "ses_0239bbd5dffeYw7qBT5vfMiBl2",
   "timeCreated": "2026-08-07T14:46:44.682Z",
-  "timeUpdated": "2026-08-07T14:50:07.139Z",
+  "timeUpdated": "2026-08-07T14:50:08.780Z",
   "session": {
     "id": "ses_0239bbd5dffeYw7qBT5vfMiBl2",
     "slug": "playful-harbor",
@@ -82,9 +82,16 @@
       "modelID": "mimo-v2.5-free",
       "providerID": "opencode",
       "time": {
-        "created": 1786114204066
+        "created": 1786114204066,
+        "completed": 1786114207733
       },
-      "sessionID": "ses_0239bbd5dffeYw7qBT5vfMiBl2"
+      "sessionID": "ses_0239bbd5dffeYw7qBT5vfMiBl2",
+      "error": {
+        "name": "MessageAbortedError",
+        "data": {
+          "message": "Aborted"
+        }
+      }
     }
   ],
   "parts": [
